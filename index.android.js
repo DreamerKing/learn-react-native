@@ -12,8 +12,7 @@ import {
   View
 } from 'react-native';
 
-import Strong from './src/commom/Strong';
-import Blink from './src/commom/Blink';
+import TextInput from './src/commom/TextInputShow';
 import Girl from './src/components/Girl';
 import styles from './src/commom/style';
 
@@ -21,10 +20,7 @@ export default class DK extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-            Welcome to <Blink>DreamerKing</Blink>!{'\n'}
-          Hello <Strong style={styles.strong}>DreamerKing</Strong>
-        </Text>
+        <TextInput/>
         <Girl source={require('./image/meinv.jpg')}
               style={styles.image}/>
       </View>
